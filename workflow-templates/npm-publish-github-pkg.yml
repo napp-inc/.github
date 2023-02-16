@@ -1,0 +1,12 @@
+name: Publication de package
+on:
+  repository_dispatch:
+    types: [new-tag-pushed]
+jobs:
+  generic-publish-gpr: 
+     uses: napp-inc/gh-action/.github/workflows/generic-npm-publish-github-pkg.yml@main
+     secrets: inherit
+     with:
+      branch: "${{ github.event.client_payload.branch }}"
+      tag: "${{ github.event.client_payload.tag }}"
+      
