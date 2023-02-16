@@ -1,9 +1,9 @@
 {
-    "name": "Publication de package napp Workflow",
+    "name": "Publication de package napp workflow",
     "description": "Ce workflow permet de publier de package npm napp dans github pkg",
     "iconName": "logo-napp",
     "categories": [
-        "Continuous integration", "JavaScript", "npm","deployment"
+        "JavaScript", "npm"
     ],
     "filePatterns": [
         "package.json$",
