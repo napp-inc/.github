@@ -3,7 +3,7 @@
     "description": "Ce workflow permet de publier de package npm napp dans github pkg",
     "iconName": "logo-napp",
     "categories": [
-        "JavaScript", "npm"
+        "continuous-integration"
     ],
     "filePatterns": [
         "package.json$",
