@@ -1,0 +1,26 @@
+name: New release version package
+description: Prepare la distribution d'une nouvelle version des packages
+title: '(release-version-pkg): '
+labels: ['release','package']
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Ce issue t'aide à distribuer une nouvelle version du package!
+    - type: dropdown
+      id: release-type
+      attributes:
+          label: --Release--
+          description: En se basant sur [semver](https://semver.org/lang/fr/) [MAJEUR.MINEUR.CORRECTIF]
+          options:
+              - Mineur
+              - Majeur
+      validations:
+          required: true
+    - type: textarea
+      id: description
+      attributes:
+          label: --Description--
+          description: Veuillez donné une briève description des changements apportés.
+ 
+
