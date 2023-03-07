@@ -1,7 +1,7 @@
 name: New release version app
 description: Prepare la distribution d'une nouvelle version pour les applications
 title: '(release-version-app): '
-labels: ['release','app']
+labels: ['release','app','app-react','app-expo']
 body:
     - type: markdown
       attributes:
